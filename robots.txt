@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b08-bs-kb-evt.pages.dev/sitemap.xml
+Sitemap: https://balsan-song-zone.program-school.online/sitemap.xml
