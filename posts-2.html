@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b08-bs-kb-evt</title>
+  <meta name="description" content="t3b08-bs-kb-evt에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://balsan-song-zone.program-school.online/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body {
+ font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
+ background: #1a1a1a;
+ color: #e0e0e0;
+ line-height: 1.6;
+ min-height: 100vh;
+ position: relative;
+ }
+ body::before {
+ content: '';
+ position: fixed;
+ top: 0; left: 0; width: 100%; height: 100%;
+ background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px);
+ pointer-events: none;
+ z-index: 9999;
+ }
+ a { color: #ff4444; text-decoration: none; border-bottom: 2px solid transparent; transition: all 0.2s; }
+ a:hover { color: #ff6666; border-bottom-color: #ff4444; }
+ img { max-width: 100%; height: auto; display: block; }
+ ul { list-style: none; }
+
+ h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; color: #ff4444; line-height: 1; margin-bottom: 1rem; }
+ h2 { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; color: #ff4444; border-left: 6px solid #ff4444; padding-left: 1rem; margin-bottom: 1.5rem; }
+ h3 { font-size: 1.4rem; font-weight: 700; text-transform: uppercase; color: #e0e0e0; margin-bottom: 0.5rem; }
+ p { margin-bottom: 1rem; font-size: 1rem; }
+
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ .section-gap { padding: 4rem 0; border-bottom: 2px solid #333; }
+
+ header {
+ background: #111;
+ padding: 1rem 0;
+ border-bottom: 4px solid #ff4444;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+ .logo { font-size: 1.8rem; font-weight: 900; text-transform: uppercase; color: #ff4444; }
+ .logo span { color: #e0e0e0; }
+
+ nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+ nav ul { display: flex; gap: 2rem; align-items: center; }
+ nav ul li a { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: 2px solid transparent; padding: 0.3rem 0.6rem; }
+ nav ul li a:hover { border-color: #ff4444; background: #222; }
+
+ .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
+ .hamburger span { width: 28px; height: 3px; background: #ff4444; transition: all 0.3s; }
+
+ .tel-link { display: inline-block; background: #ff4444; color: #111 !important; padding: 0.5rem 1.2rem; font-weight: 900; border: none !important; font-size: 1rem; }
+
+ .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+ .info-card { background: #222; border: 2px solid #333; padding: 2rem; position: relative; }
+ .info-card::before { content: '▶'; position: absolute; top: 10px; right: 10px; color: #ff4444; font-size: 1.2rem; }
+ .info-card h3 { color: #ff4444; }
+ .info-card p { color: #ccc; }
+
+ .detail-list { display: flex; flex-direction: column; gap: 1.5rem; }
+ .detail-item { background: #222; border-left: 4px solid #ff4444; padding: 1.5rem; }
+ .detail-item strong { color: #ff4444; display: block; font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+ @media (max-width: 768px) {
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.5rem; }
+ .info-grid { grid-template-columns: 1fr; }
+ nav ul { display: none; flex-direction: column; width: 100%; background: #111; padding: 1rem; position: absolute; top: 100%; left: 0; gap: 0.5rem; }
+ nav ul.active { display: flex; }
+ .hamburger { display: flex; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b08-bs-kb-evt">
+  <meta property="og:description" content="t3b08-bs-kb-evt에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://balsan-song-zone.program-school.online/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <nav>
+ <div class="logo">발산<span>노래방</span></div>
+ <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('active')">
+ 
+ </div>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/event">이벤트</a></li>
+ <li><a href="/faq">FAQ</a></li>
+ 
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0411.html">발산 노래방 이벤트 검색 시 필요한 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">검색 엔진의 인덱싱 속도를 높이기 위해서는 서버의 응답 시간과 데이터 처리 대역폭이 충분히 확보되어야 합니다. 발산 노래방 이벤트와 같은 키워드는 검색 수요가 몰리는 시기에 서버 부하가 급격히 발생</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0412.html">발산 노래방 이벤트 정보와 구글 신뢰 지수 모발이식 솔루션 비교 분석</a>
+        <p class="post-item__summary">여러분은 자신의 온라인 정보를 관리할 때 어떤 기준을 가지고 신뢰도를 측정하고 계십니까? 지역 정보를 찾는 발산 노래방 이벤트 관련 데이터와 전문 의료 정보는 성격이 전혀 다르지만, 구글이 평가하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0155.html">발산 노래방 이벤트 확인 후 살펴보는 연남 유흥 추천정보</a>
+        <p class="post-item__summary">성공적인 밤을 보내기 위해서는 장소의 분위기, 접근성, 그리고 일행의 구성이라는 세 가지 필수 조건을 충족해야 합니다. 발산 노래방 이벤트 정보를 검색하며 즐거운 시간을 고민하던 중 연남 지역의 유</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0156.html">발산 노래방 이벤트 비교로 배우는 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">가라오케를 방문하기 전, 과연 어느 곳이 내 요구 사항을 가장 잘 충족할지 고민해 본 적이 있습니까? 발산 노래방 이벤트 현장을 직접 확인하며 느꼈던 비교의 중요성을 바탕으로 마곡 지역 업체들을 선</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0157.html">발산 노래방 이벤트 활용한 마곡 유흥 추천정보 확인하는 법</a>
+        <p class="post-item__summary">주말 저녁 마곡 지역에서 시간을 보낼 때 발산 노래방 이벤트 정보를 찾는 분들이 많습니다. 단순히 화려한 문구에 현혹되기보다는 신뢰할 수 있는 데이터를 선별하는 과정이 중요합니다. 첫 번째 단계로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0158.html">발산 노래방 이벤트 비교로 보는 합정 노래방 추천정보의 기준</a>
+        <p class="post-item__summary">많은 이들이 발산 노래방 이벤트 정보를 찾으면서도 동시에 합정 노래방 추천정보를 검색하며 합리적인 선택을 고민합니다. 업소를 선택할 때 가장 큰 고민은 가격 정책의 투명성과 서비스의 질 사이에서 결</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0159.html">발산 노래방 이벤트 검색 전 알아야 할 연남 클럽 추천정보 예약 팁</a>
+        <p class="post-item__summary">사람들이 발산 노래방 이벤트 소식을 확인하고 이어 연남 지역의 클럽을 찾을 때 가장 흔히 실패하는 지점이 바로 정보 확인의 부족입니다. 예약 절차를 제대로 밟지 않으면 현장에서 헛걸음을 하거나 대기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0160.html">발산 노래방 이벤트 확인 후 합정 셔츠룸 추천정보 체크리스트</a>
+        <p class="post-item__summary">발산 노래방 이벤트 정보를 이미 파악했다면 이제는 좀 더 특별한 공간인 합정 셔츠룸 추천정보를 체크리스트 방식으로 점검해 볼 차례입니다. 셔츠룸은 위치와 접근성이 방문 만족도의 상당 부분을 결정하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0161.html">발산 노래방 이벤트 찾아보다 알게 된 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">동료들과 오랜만에 회식 자리를 갖기로 하고 발산 노래방 이벤트 정보를 검색하던 중, 퇴근길 동선이 겹치는 공덕 지역의 가라오케를 눈여겨보게 되었습니다. 단순히 노래만 부르는 공간을 넘어 비즈니스 미</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0162.html">발산 노래방 이벤트 확인 후 살펴보는 상수 마사지 추천정보</a>
+        <p class="post-item__summary">많은 이들이 발산 노래방 이벤트 같은 활기찬 놀이 문화를 즐긴 뒤, 뭉친 근육을 풀기 위해 상수 마사지샵을 찾곤 합니다. 흔히 마사지는 밤늦은 시간에 받아야 피로가 풀린다는 오해가 있지만, 이는 개</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0163.html">발산 노래방 이벤트 대안으로 찾은 망원 노래방 추천정보</a>
+        <p class="post-item__summary">좋은 음향 기기, 쾌적한 실내 환경, 접근성 좋은 위치라는 세 가지 충족 조건이 갖춰져야 만족스러운 노래방 시간을 보낼 수 있습니다. 발산 노래방 이벤트 정보를 검색하다가 망원 지역으로 범위를 넓혀</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0164.html">발산 노래방 이벤트 대신 고려해 볼 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">오늘 친구들과 홍대 거리에서 시간을 보내기로 했는데, 어떤 노래방을 가야 모두가 즐거울까요? 발산 노래방 이벤트 정보를 보며 고민하던 중 홍대만의 감성을 담은 공간이 많다는 점에 주목하게 되었습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0165.html">발산 노래방 이벤트 찾아 공덕 셔츠룸 추천정보 확인하는 법</a>
+        <p class="post-item__summary">발산 노래방 이벤트 정보를 검색하다 보면 자연스럽게 서울 주요 지역의 유흥 문화에 관심을 가지게 됩니다. 특히 공덕 일대에서 셔츠룸을 방문하려는 경우, 단순히 홍보 문구만 믿기보다는 명확한 검증 절</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">발산 지역 노래방 이벤트 정보 안내</a>
+        <p class="post-item__summary">발산 지역에서 노래방을 이용하고자 할 때, 다양한 이벤트를 통해 더욱 합리적이고 즐거운 시간을 보낼 수 있습니다. 노래방 이벤트는 특정 시간대 할인, 추가 서비스 제공, 단체 방문 혜택 등 여러 형</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">발산 노래방 이벤트 안내</a>
+        <p class="post-item__summary">발산 지역에는 다양한 노래방 업소들이 위치해 있으며, 각 업소에서는 정기적으로 특별 이벤트를 운영하고 있습니다. 이러한 이벤트는 주로 예약 고객에게 추가 혜택을 제공하거나, 특정 시간에 맞춰 특별한</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">발산 노래방 이벤트 안내</a>
+        <p class="post-item__summary">발산 지역에서는 다양한 노래방 이벤트가 진행되고 있으며, 이용자는 이를 통해 저렴한 비용으로 음료를 즐길 수 있습니다. 특정 요일이나 기간 동안 진행되는 프로모션은 공식 안내를 통해 확인할 수 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">발산 노래방 이벤트 정보 안내</a>
+        <p class="post-item__summary">발산 지역의 노래방은 정기적으로 다양한 이벤트를 진행하며, 이용자들에게 합리적인 비용으로 즐기는 기회를 제공합니다. 이러한 이벤트는 특별한 날을 기념하거나 친구, 가족, 동료와 함께 시간을 보내는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">발산 노래방 이벤트 안내</a>
+        <p class="post-item__summary">발산 지역에서 운영되는 노래방에서는 주기적으로 다양한 이벤트를 진행합니다. 이러한 이벤트는 주로 신규 고객 유치나 회원 충성도 향상 목적으로 기획되며, 특별한 할인이나_bonus_ 혜택이 포함된 경</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-002-v40dy9.html">사장 몰래 계산한 메뉴원가, 왜 이 노래방만 2 년 살아남았나? 홍대 폐업 신화의 실체</a>
+        <p class="post-item__summary">nightlife, karaoke room, neon light, hongdae, interior design, microphone, bass speaker, dark atmosphere, (neo</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-001-1888of5.html">Created Title</a>
+        <p class="post-item__summary">발산 지역에서 모임이나 회식을 계획할 때 즐거운 시간을 보낼 수 있는 공간으로 노래방을 선택하는 경우가 많습니다. 특히 방문 고객을 위한 다채로운 이벤트가 진행되는 시기에는 더욱 풍성하고 흥미로운 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
